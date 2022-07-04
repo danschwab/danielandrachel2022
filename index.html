@@ -27,15 +27,29 @@
 		margin:0;
 	}
 	
-	#content {
+	#main {
 		max-width:800px;
 		margin:auto;
-		padding:2em;
 		background-color: #672E5E;
 	}
+	#main .content {
+		padding:1em;
+		padding-bottom:2em;
+		margin-bottom:2em;
+	}
 	
+	hr {
+		background-color:white;
+		height:2px;
+		border:0;
+		margin:3em 1em;
+	}
+	a {
+		color: #FF6C32;
+	}
 	h1 {
 		text-align: center;
+		font-weight:200;
 	}
 	
 	img {
@@ -44,8 +58,6 @@
 	
 	.countdown {
 	  width: 100%;
-	  float: left;
-	  margin: 20px auto;
 	}
 
 	.timer {
@@ -53,6 +65,10 @@
 		width: 100%;
 		font-size: 24pt;
 		text-align: center;	
+	}
+	.timer span{
+		width: 1.5em;
+		display: inline-block;
 	}
 
 </style>
@@ -64,22 +80,28 @@
 
 
 <body>
-	<div id="content">
+	<div id="main">
 		
 		
 		
 		<img src="./danielandrachel.jpg" alt="Daniel and Rachel in a sunset">
 		
-		<h1> Daniel & Rachel are getting Married!</h1>
-		<div class="countdown">
-		  <p class="timer">
-			<span id="days">Daniel</span>
-			: <span id="hours">And</span>
-			: <span id="minutes">Rachel</span>
-			: <span id="seconds">2022</span>
-		  </p>
+		<div class="content">
+			<h1> Daniel & Rachel are getting Married!</h1>
+			<div class="countdown">
+			  <p class="timer">
+				<span id="days"></span>
+				: <span id="hours"></span>
+				: <span id="minutes"></span>
+				: <span id="seconds"></span>
+			  </p>
+			</div>
+			<hr>
+			<h2>Registry:</h2>
+			<a href="https://www.pamperedchef.com/wl/06IxYa">Pampered Chef</p>
+			<a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/551568924?eventType=Wedding">Bed Bath and Beyond</a>
+			<p>to be continued...</p>
 		</div>
-		
 	</div>
 </body>
 
