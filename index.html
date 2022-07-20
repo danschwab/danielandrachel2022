@@ -20,8 +20,12 @@
 
 	body {
 		background-color: #4A2964;
+		/*background-position: top;
+		background-size: cover;
+		background-image: url("media/flowers.jpg");*/
+		
 		color: white;
-		font-family: Georgia;
+		font-family: times, serif;
 		font-weight:normal;
 		padding:0;
 		margin:0;
@@ -31,11 +35,13 @@
 		max-width:800px;
 		margin:auto;
 		background-color: #672E5E;
+		margin:4em auto;
+		border-radius: 50% / 2em;
+		overflow:hidden;
 	}
 	#main .content {
 		padding:2em;
 		padding-bottom:2em;
-		margin-bottom:8em;
 	}
 	
 	hr {
@@ -51,9 +57,28 @@
 	}
 	
 	a {
-		color: #FF6C32;
+		color: #672E5E;
+		display: inline-block;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 0.5em 3em;
+		margin-top: .5em;
+		margin-bottom: .5em;
+		margin-right: 1em;
+		text-decoration: none;
+		background-color: white;
+		border-radius: 0.25em;
+		font-weight: 600;
+		transition: color .2s, background-color .2s;
 	}
+	a:hover {
+		background-color: #D75038;
+	}
+	
+	
+	
 	h1 {
+		font-family: Georgia;
 		text-align: center;
 		font-weight:200;
 	}
@@ -64,9 +89,12 @@
 	
 	.countdown {
 	  width: 100%;
+	  font-family: Georgia;
 	}
 
 	.timer {
+		animation: fadeIn 4s;
+		
 		margin: 0;
 		width: 100%;
 		font-size: 24pt;
@@ -81,7 +109,7 @@
 	
 	
 	.shader {
-	    backface-visibility: hidden;
+		backface-visibility: hidden;
 		position: relative;
 		display: block;
 		overflow: hidden;
@@ -95,6 +123,8 @@
 		backface-visibility: hidden;
 	}
 	.specular {
+		animation: fadeIn 4s;
+	
 		z-index: 0;
 		background-color: #000;
 		background-position: center;
@@ -109,6 +139,14 @@
 		background-size: 100%;
 		mix-blend-mode: multiply;
 		background-image: url("media/danielandrachelmask.jpg");
+	}
+	
+	
+	
+	@keyframes fadeIn {
+	  0% { opacity: 0; }
+	  50% { opacity: 0; }
+	  100% { opacity: 1; }
 	}
 	
 	
@@ -135,17 +173,19 @@
 			<h1> Daniel & Rachel are getting Married!</h1>
 			<div class="countdown">
 			  <p class="timer">
-				<span id="days" style="width:2em;"></span>
-				: <span id="hours"></span>
-				: <span id="minutes"></span>
-				: <span id="seconds"></span>
+				<span id="days" style="width:2em;">00</span>
+				: <span id="hours">00</span>
+				: <span id="minutes">00</span>
+				: <span id="seconds">00</span>
 			  </p>
 			</div>
 			<hr>
 			<h2>Registry:</h2>
-			<a href="https://www.pamperedchef.com/wl/06IxYa">Pampered Chef</p>
-			<a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/551568924?eventType=Wedding">Bed Bath and Beyond</a>
-			<p>to be continued...</p>
+			<a target="_tab" href="https://www.pamperedchef.com/wl/06IxYa">Pampered Chef</a>
+			<a target="_tab" href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/551568924?eventType=Wedding">Bed Bath & Beyond</a>
+			<a target="_tab" href="https://www.blueprintregistry.com/registry/daniel-rachel-wedding-registry-11-5-2022">Other (more fun)</a>
+			<p>In addition to the registries above, we love local pottery, fine art, and unpredicted games. Any gift great and small is appreciated, especially your presence worshiping with us!</p>
+			<p><strong>Shipping address:</strong> 33 Hill Terrace, Henrietta, NY 14467</p>
 		</div>
 	</div>
 </body>
@@ -202,7 +242,7 @@
 	}
 	
 	
-	countdown('11/5/2022 01:00:00 PM');
+	countdown('11/05/2022 01:00:00 PM');
 
 </script>
 
