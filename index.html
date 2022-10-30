@@ -307,34 +307,7 @@
 			</div>
 			<span class="hr"></span>
 			
-			<h2>Please RSVP</h2>
-			<div id="rsvp-0"> <button onclick="expandRsvp('rsvp-1');collapseRsvp('rsvp-0');collapseRsvp('rsvp-5');document.getElementById('names').focus();">RSVP</button></div>
-			<div id="rsvp-1" class="hidden">
-				
-				<input onkeyup="if(document.getElementById('names').value.length > 2) expandRsvp('rsvp-2');" id="names" name="Names" type="text" placeholder="List names of all attendees in family / party" required>
-				
-				<div id="rsvp-2" class="hidden">
-					<input id="attending" onclick="expandRsvp('rsvp-3');expandRsvp('rsvp-4');" type="radio" name="Attending" value="Accept" required>
-					<label for="attending" class="button left">Accept
-					</label><input id="decline" type="radio" onclick="expandRsvp('rsvp-3');collapseRsvp('rsvp-4');" name="Attending" value="Decline"><label for="decline" class="button right">Decline
-					</label>
-					
-					
-					<div id="rsvp-3" class="hidden">
-					
-						<div id="rsvp-4" class="hidden">
-							<p>We are glad you can make it! If you have kids, they are welcome and we will have activity packets for them. Make sure you listed everyone who is attending so that we have seats for everyone. We look forward to seeing you in November!</p>
-							<textarea id="allergies" name="Allergies" placeholder="List any dietary restrictions"></textarea>
-							<input id="other" type="text" name="Other" placeholder="Anything else to declare?">
-						</div>
-						
-						<button onclick="rsvpForm()">Submit</button>
-					</div>
-				</div>
-			</div>
-			<div id="rsvp-5" class="hidden"><p>Thank you!</p></div>
-
-			<hr>
+			
 			<h2>Saturday November fifth 2022</h2>
 			<h2 class="inline-element">1:00pm</h2> <span>ceremony:</span>
 			<p>
